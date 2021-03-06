@@ -33,7 +33,7 @@ int main() {
 		}
 
 		else if (str == "empty") {
-			if (str.empty()) cout << 1 << endl;
+			if (stk.empty()) cout << 1 << endl;
 			else cout << 0 << endl;
 		}
 
