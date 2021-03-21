@@ -8,20 +8,20 @@ int find(int n) {
 	if (parent[n] < 0) return n;
 	parent[n] = find(parent[n]);
 	return find(parent[n]);
-	// root ³ëµå¸¦ Ã£´Â ÇÔ¼ö
+	// root ë…¸ë“œë¥¼ ì°¾ëŠ” í•¨ìˆ˜
 }
 
 void uni(int a, int b) {
 	a = find(a); b = find(b);
 	if (a == b) return;
-	// root°¡ °°´Ù¸é
+	// rootê°€ ê°™ë‹¤ë©´
 	parent[b] = a;
-	// ´Ù¸£¸é ¼­·Î ¿¬°á
-	// ¿¬°áÇØÁÖ´Â ÇÔ¼ö
+	// ë‹¤ë¥´ë©´ ì„œë¡œ ì—°ê²°
+	// ì—°ê²°í•´ì£¼ëŠ” í•¨ìˆ˜
 }
 
 int main() {
-	// À¯´Ï¿Â ÆÄ¿îµå ¹®Á¦
+	// ìœ ë‹ˆì˜¨ íŒŒì¸ë“œ ë¬¸ì œ
 	ios::sync_with_stdio(NULL);
 	cin.tie(nullptr);
 	cout.tie(NULL);
