@@ -44,13 +44,13 @@ int main(void) {
 			else {
 				//전체 홀수개라면 
 				if (minsize < maxsize) {
-					// max가 더 많으면 max에서 젤 작은게 중간값
+					// max가 더 많으면 max에서 젤 큰게 중간값
 					minpq.push(mid);
 					mid = maxpq.top();
 					maxpq.pop();
 				}
 				else if (minsize > maxsize) {
-					// min가 더 많으면 min에서 젤 큰게 중간값
+					// min가 더 많으면 min에서 젤 작은게 중간값
 					maxpq.push(mid);
 					mid = minpq.top();
 					minpq.pop();
